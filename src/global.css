@@ -59,7 +59,7 @@
   .dot {
     width: 8px;
     height: 8px;
-    background-color: #6200ea;
+    /* background-color: #6200ea; */
     border-radius: 50%;
     animation: wave 1.5s infinite ease-in-out;
   }

@@ -1,37 +1,43 @@
 # @hammim-in/collbot-client
 
-AI-powered CollBot package for fast and efficient conversational AI in React.ts applications.
+Collbot is an AI-driven chatbot solution that seamlessly integrates into your website via a simple package. Easily configure your chatbot with company-specific details, terms, and policies, enabling it to provide instant and accurate responses to customer queries. Enhance user engagement and automate customer interactions effortlessly with Collbot. 🚀
 
 ## Installation
 
 Install the package using npm:
 
-```sh
+sh
 npm i @hammim-in/collbot-client
-```
+
 
 Or using yarn:
 
-```sh
+sh
 yarn i @hammim-in/collbot-client
-```
+
 
 ## Usage
 
 ```javascript
-"use client";
-import CollBot from '@hammim-in/collbot-client';
+"use client"
+import React from 'react'
+import CollBot from '@hammim-in/collbot-client'
 
-function App() {
-  return <CollBot AICHART_RECAPTCHA_FRONTED_KEY="6Ld4E98qAAAAA********co6T4iC27" YOUR_SITE_KEY="6Ld4E98qAA********o6T4iC27" />;
+const App = () => {
+  return (
+    <div><CollBot options={{themeColor: "red", title: "Ai-Collbot"}}/></div>
+  )
 }
 
-export default CollBot;
+export default App
+
 ```
+
+
 
 ## Features
 
-- 🔥 **Fast and lightweight** chatbot integration
+- 🔥 *Fast and lightweight* chatbot integration
 - 🤖 Supports AI-based responses
 - ⚡ Easy to set up and use
 - 🛠 Configurable settings for different AI models
@@ -42,10 +48,11 @@ You can pass the following options when initializing the chatbot:
 
 | Option  | Type   | Description |
 |---------|--------|-------------|
-| `AICHART_RECAPTCHA_FRONTED_KEY` | `string` | Your recaptcha API AICHART_RECAPTCHA_FRONTED_KEY  |
-| `YOUR_SITE_KEY`  | `string` | Your recaptcha  YOUR_SITE_KEY (upcoming) |
-| `bgColor` | `string` | set background color |
-| `primaryColor` | `string` | change primary color of collbot-client |
+| apiKey | string | Your API key for the AI model (upcoming) |
+| model  | string | AI model to use (e.g., gpt-3.5-turbo) (upcoming) |
+| themeColor | string | set background color |
+| title | string | title of ai chat bot |
+| icon | string | image url of logo |
 
 Example:
 
@@ -57,6 +64,7 @@ const bot = new collbot({
 });
 ```
 
+
 ## Contribution
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
@@ -64,4 +72,3 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ## License
 
 MIT License © 2025 Hammim.in
-
