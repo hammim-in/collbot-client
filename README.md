@@ -6,15 +6,15 @@ Collbot is an AI-driven chatbot solution that seamlessly integrates into your we
 
 Install the package using npm:
 
-sh
+```sh
 npm i @hammim-in/collbot-client
-
+```
 
 Or using yarn:
 
-sh
+```sh
 yarn i @hammim-in/collbot-client
-
+```
 
 ## Usage
 
